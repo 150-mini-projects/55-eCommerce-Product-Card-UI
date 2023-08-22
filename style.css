@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 52.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262323;
+}
+
+.container {
+  position: relative;
+  width: 80rem;
+  height: 50rem;
+  padding: 2rem 3rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.container .back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: 3.5rem solid #10e025;
+  border-bottom: 3.5rem solid transparent;
+  border-right: 3.5rem solid transparent;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+}
+
+.container .back i {
+  color: #fff;
+  font-size: 2rem;
+  transform: translateX(-2rem) translateY(-2.3rem);
+}
+
+.container .img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.container .img-container img {
+  height: 35rem;
+  object-fit: cover;
+}
+
+.container .img-container .dots {
+  text-align: center;
+}
+
+.container .img-container .dots span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+  border: 1px solid #04050d;
+}
+
+.container .img-container .dots span:nth-of-type(2) {
+  background-color: #04050d;
+}
+
+.container .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 90%;
+  width: 50%;
+}
+
+.container .info-container .badge {
+  display: inline-block;
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  background-color: #10e025;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container .info-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.container .info-container h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: "Open sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: #707070;
+}
+
+.text {
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+
+.custom-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  margin: 0.3rem;
+  background-color: #10e025;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.custom-button .icon {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.custom-button .button-text {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+}
+
+.ratings {
+  display: flex;
+  align-items: center;
+}
+
+.ratings i {
+  font-size: 2.5rem;
+}
+
+.ratings .fa-regular.fa-star {
+  color: #ccc;
+}
+
+.ratings .fa-solid.fa-star {
+  color: #ff6f00;
+}
+
+.price .final-price {
+  font-size: 2.5rem;
+}
+
+.imp-text {
+  font-size: 1.5rem;
+}
